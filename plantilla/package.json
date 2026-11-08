@@ -1,0 +1,32 @@
+{
+  "name": "plantilla-apuntes-vitepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@slidev/cli": "^52.19.1",
+    "@slidev/theme-default": "^0.25.0",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "mermaid": "^11.16.0",
+    "vite-plugin-static-copy": "^4.1.1",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  },
+  "dependencies": {
+    "@codemirror/lang-php": "^6.0.2",
+    "@fontsource/inter": "^5.3.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "codemirror": "^6.0.2",
+    "vue-codemirror": "^6.1.1"
+  }
+}

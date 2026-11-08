@@ -1,28 +1,43 @@
+
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Arquitectura para realización de apuntes",
-  description: "Descripción de componentes, containers, estilos y otros elementos para la realización de apuntes de los diferentes módulos",
+  title: 'Arquitectura de Apuntes',
+  description: 'Documentación y organización de proyectos docentes',
+  lang: 'es-ES',
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Inicio', link: '/' },
+      { text: 'Arquitectura', link: '/arquitectura/' },
+      { text: 'Guías', link: '/guias/inicializar_proyecto_vitepress' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Arquitectura',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Visión general', link: '/arquitectura/' },
+          { text: 'Componentes Vue', link: '/arquitectura/componentes' },
+          { text: 'Contenedores Markdown', link: '/arquitectura/containers' },
+          { text: 'Estilos CSS', link: '/arquitectura/estilos' }
+        ]
+      },
+      {
+        text: 'Guías',
+        items: [
+          {
+            text: 'Inicializar proyecto VitePress',
+            link: '/guias/inicializar_proyecto_vitepress'
+          }
         ]
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    outline: 'deep',
+
+    search: {
+      provider: 'local'
+    }
   }
 })

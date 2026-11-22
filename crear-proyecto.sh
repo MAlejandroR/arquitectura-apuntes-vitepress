@@ -34,6 +34,7 @@ mkdir -p "$DESTINO/docs"
 cp -a "$PLANTILLA/.vitepress" "$DESTINO/docs/"
 cp "$PLANTILLA/package.json" "$DESTINO/"
 
+
 # Crear página inicial
 cat > "$DESTINO/docs/index.md" <<EOF
 ---

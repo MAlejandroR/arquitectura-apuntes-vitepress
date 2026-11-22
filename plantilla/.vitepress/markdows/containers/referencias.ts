@@ -5,6 +5,6 @@ export function registrarReferencias(md: MarkdownIt) {
     crearContainer(md, {
         nombre: 'referencias',
         titulo: 'Dónde buscar información',
-        icono: 'fa-solid fa-link'
+        icono: 'fa-solid fa-globe'
     })
 }

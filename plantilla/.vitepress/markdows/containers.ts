@@ -33,12 +33,7 @@ export function dawsContainers(md: MarkdownIt) {
         'Finalidad',
         'Al terminar el tema deberás…',
     )
-    labeledBox(
-        'referencias',
-        'daws-referencias',
-        'Referencias',
-        'Dónde buscar información',
-    )
+
     // labeledBox('definicion', 'daws-definicion', 'Definición', 'Concepto')
     labeledBox('previo', 'daws-previo', 'Conocimiento previo', 'Antes de seguir')
     labeledBox('actividad', 'daws-actividad', 'Actividad', 'Para hacer ahora')

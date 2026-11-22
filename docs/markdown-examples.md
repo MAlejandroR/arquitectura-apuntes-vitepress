@@ -83,3 +83,29 @@ This is a details block.
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+
+# Para notas al pie
+```bash
+npm install markdown-it-footnote
+```
+En config.mts.
+```js
+
+import footnote from 'markdown-it-footnote'
+
+export default defineConfig({
+  markdown: {
+    config(md) {
+      md.use(footnote)
+    }
+  }
+})
+```
+
+Uso:
+
+```md
+  - `var_export()`[^retorno]: genera  una representación de una variable como código PHP. 
+  
+[^retorno]:ambas funciones, admiten un segundo argumento booleano que, si es `true`, hace que devuelvan el resultado como un string en lugar de mostrarlo.
+```

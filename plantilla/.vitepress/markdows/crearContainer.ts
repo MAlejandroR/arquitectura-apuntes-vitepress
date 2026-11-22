@@ -85,7 +85,11 @@ export function crearContainer(
 
                 return `
 <div class="${clase}">
-  <p class="${clase}__kicker">${md.utils.escapeHtml(etiqueta)}</p>
+  <p class="${clase}__kicker">
+      <i class="${iconoFinal}" aria-hidden="true"></i>
+
+        ${md.utils.escapeHtml(etiqueta)}
+        </p>
   <p class="${clase}__sub">${subtitulo}</p>
   <div class="${clase}__body">
 `

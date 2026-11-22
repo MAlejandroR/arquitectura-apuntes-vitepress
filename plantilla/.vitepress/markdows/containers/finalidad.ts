@@ -5,6 +5,12 @@ export function registrarFinalidad(md: MarkdownIt) {
     crearContainer(md, {
         nombre: 'finalidad',
         titulo: 'Al terminar el tema deberás…',
-        icono: 'fa-solid fa-bullseye'
+        icono: 'fa-solid fa-graduation-cap'
+        /*
+        fa-bullseye  diana
+        fa-flag-checkered  bandera como de llegada
+        fa-graduation-cap
+        fa-check-double doble check
+        * */
     })
 }
